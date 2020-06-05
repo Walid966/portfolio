@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   font-family: "Open Sans", sans-serif;
   color: #272727;
@@ -96,7 +94,7 @@ nav a:active {
 }
 
 main .info {
-  height: 70vh;
+  height: 87vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,41 +107,15 @@ main .container {
   margin: auto;
 }
 
+.name {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
 .info p {
-  line-height: 1.3;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin: 1.1rem 0;
   color: #272727;
-  max-width: 430px;
-}
-
-.btns {
-  margin-top: 50px;
-  display: flex;
-}
-
-.resume {
-  margin-left: 20px;
-}
-
-.btn,
-.resume {
-  width: 10rem;
-  padding: 0.5rem;
-  width: 120px;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  color: #272727;
-  border: 1px solid #000000;
-  transition: all 300ms;
-  border-radius: 20px;
-}
-
-.resume:hover,
-.btn:hover {
-  color: #ffffff !important;
-  background-color: #000000;
 }
 
 .logo {
@@ -152,11 +124,23 @@ main .container {
   color: #181111;
 }
 
+.logo::before {
+  content: "< ";
+}
 
-#work h2 {
+.logo::after {
+  content: " />";
+}
+
+.copy-right {
+  display: none;
+}
+
+#work h2,
+#contact h2 {
   font-size: 40px;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .proj-container {
@@ -164,7 +148,7 @@ main .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 #work h3 {
@@ -176,7 +160,6 @@ main .container {
   width: 100%;
   max-width: 700px;
   height: 300px;
-  border-radius: 10px !important;
   background: #a13737;
   position: relative;
   padding: 10px;
@@ -220,6 +203,27 @@ main .container {
   font-size: 16px;
 }
 
+#contact {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.email {
+  color: #554a4a;
+}
+
+.proj-name {
+  background-color: #4d4d4d;
+  color: #fff;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-decoration: none;
+}
+
 footer {
   background: #ebebeb;
 }
@@ -233,25 +237,30 @@ footer p {
   text-align: center;
 }
 
-@media only screen and (max-width: 850px) {
-  .info .name {
-    font-size: 60px;
-  }
-
-}
 
 @media only screen and (max-width: 768px) {
+  .copy-right {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .info p {
+    font-size: 1.3rem;
+  }
+
   main .info {
-    height: 70vh !important;
+    height: 87vh !important;
   }
 
   .info .name {
     font-size: 50px;
   }
 
-  #work h2 {
+  #work h2,
+  #contact h2 {
     font-size: 27px;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
 
@@ -295,79 +304,39 @@ footer p {
   main .info {
     margin-left: 0;
   }
-
-  .my {
-    font-size: 0.9rem;
-  }
-
-  main p {
-    font-size: 0.9rem !important;
-    max-width: 350px !important;
-  }
 }
 
 @media only screen and (max-width: 590px) {
-  .my {
-    font-size: 0.9rem;
-  }
-
-  .name {
-    font-size: 43px !important;
-  }
-
-  main p {
-    font-size: 0.9rem !important;
-    max-width: 350px !important;
-  }
 
   .hamburger {
     display: block;
     z-index: 3;
     right: 3rem;
   }
-
-  main .btn {
-    font-size: 0.9rem;
-    margin-top: 1rem;
-    width: 8rem;
-    padding: 0.6rem 0.9rem;
-  }
 }
 
-@media only screen and (max-width: 520px) {
-  .my {
-    font-size: 0.8rem;
-  }
-
+@media only screen and (max-width: 414px) {
   .name {
-    font-size: 37px !important;
+    font-size: 40px !important;
+  }
+
+  .info p {
+    font-size: 1.1rem;
   }
 }
 
-@media only screen and (max-width: 448px) {
-  .name {
-    font-size: 31px !important;
-  }
-
-}
 
 @media only screen and (max-width: 360px) {
-  main p {
-    font-size: 13px !important;
-    max-width: 270px !important;
-  }
-
-  .my {
-    font-size: 0.8rem;
-  }
-
-  .name {
-    font-size: 27px !important;
-  }
 
   .hamburger {
     display: block;
     z-index: 3;
     right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 328px) {
+  .name {
+    font-size: 36px !important;
   }
 }

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ba3779d8d2.js" crossorigin="anonymous"></script>
   <style>
     * {
@@ -15,7 +16,7 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       color: #4b4b4b;
-      background-color: #e7e7e7;
+      background-color: #f0f0f0;
     }
 
     .container {
@@ -26,27 +27,24 @@
     }
 
     h1 {
-      font-size: 62px;
+      font-size: 44px;
     }
 
-    h2 {
-      font-size: 26px;
-      margin-bottom: 25px;
-    }
+    h2,
+    h1 {
 
-    h1,
-    h2 {
-      color: #1e77e2;
+      color: #54966d;
       font-family: serif;
     }
 
     h2 {
+      font-size: 26px;
       margin-bottom: 10px;
     }
 
     h3 {
-      font-size: 16px;
       margin-bottom: 10px;
+      font-size: 16px;
     }
 
     .sum {
@@ -73,7 +71,8 @@
       color: #4b4b4b;
     }
 
-    .lang {
+    .lang,
+    .libr {
       margin-right: 60px;
     }
 
@@ -90,6 +89,12 @@
 
     }
 
+    .edu div,
+    .exp div {
+      display: flex;
+      justify-content: space-between;
+    }
+
     .edu p {
       margin-bottom: 7px;
     }
@@ -99,6 +104,19 @@
       display: flex;
       justify-content: space-between;
     }
+
+    .exp .fas {
+      font-size: 12px;
+    }
+
+    .proj-link {
+      text-decoration: underline;
+      font-size: 14px;
+    }
+
+    .exp p {
+      margin-bottom: 10px;
+    }
   </style>
   <title>Resume</title>
 </head>
@@ -106,7 +124,7 @@
 <body>
   <main class="container">
     <h1>Walid El Ahmadi</h1>
-    <p class="sum">I'm a front-end developer looking for an opportunity.</p>
+    <p class="sum">I'm a web developer looking for an opportunity.</p>
     <section class="contact">
       <a href="mailto:walid.elahmadi9@gmail.com">
         <i class="fas fa-envelope"></i> walid.elahmadi9@gmail.com
@@ -141,14 +159,31 @@
             <li>Bootstrap</li>
           </ul>
         </div>
+
+        <div class="tools">
+          <h3>Tools</h3>
+          <ul>
+            <li>Git/Github</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section class="exp">
-      <h2>Relevant Experience</h2>
-      <p>
-        I created a website for Mistral restaurant
-      </p>
+      <h2>Experience</h2>
+      <h3>Restaurant website</h3>
+      <div>
+        <p>
+          I created a full stack web app for a local restaurant.
+        </p>
+
+        <span>June 2020</span>
+      </div>
+
+
+      <a class="proj-link" href="https://google.com" target="_blank">
+        Visit website <i class="fas fa-external-link-alt"></i>
+      </a>
     </section>
 
     <section class="edu">
