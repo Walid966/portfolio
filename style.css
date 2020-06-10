@@ -208,7 +208,8 @@ main .container {
   padding-bottom: 50px;
 }
 
-.email {
+.email,
+.tel {
   color: #554a4a;
 }
 
