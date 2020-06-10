@@ -211,6 +211,13 @@ main .container {
 .email,
 .tel {
   color: #554a4a;
+  display: block;
+  margin-top: 5px;
+}
+
+.email {
+
+  margin-bottom: 40px;
 }
 
 .proj-name {
