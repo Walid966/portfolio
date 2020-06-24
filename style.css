@@ -164,6 +164,12 @@ main .container {
   z-index: 50;
   font-size: 60px;
   color: #fff;
+  display: block;
+  text-align: center;
+}
+
+.des {
+  font-size: 30px;
 }
 
 .project {
