@@ -261,12 +261,16 @@ footer p {
 }
 
 @media only screen and (max-width: 768px) {
+  main .container {
+    width: 90%;
+  }
+
   .rest-name {
-    font-size: 45px !important;
+    font-size: 50px !important;
   }
 
   .des {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
 
   .copy-right {
