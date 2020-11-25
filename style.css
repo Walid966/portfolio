@@ -147,7 +147,8 @@ main .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 80px;
+  margin: 0 20px 80px 0;
+  max-width: 400px;
 }
 
 #work h3 {
@@ -171,10 +172,13 @@ main .container {
 .des {
   font-size: 30px;
 }
+.project .des {
+  font-size: 24px;
+}
 
-.project {
+.project-1 {
   width: 100%;
-  max-width: 700px;
+  max-width: 600px;
   height: 300px;
   background: #a13737;
   position: relative;
@@ -187,6 +191,30 @@ main .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.project-2 {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  background: #a13737;
+  position: relative;
+  padding: 10px;
+  background: url("img/pexels-karolina-grabowska-5632402.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .project::after {
