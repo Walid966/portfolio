@@ -293,6 +293,12 @@ footer p {
     width: 90%;
   }
 
+  .proj-container {
+    margin: 16px 0;
+    width: 90%;
+    height: 250px !important;
+  }
+
   .rest-name {
     font-size: 50px !important;
   }
@@ -323,6 +329,7 @@ footer p {
   #contact h2 {
     font-size: 27px;
     margin-bottom: 50px;
+    margin-top: 50px;
   }
 
   .hamburger {
