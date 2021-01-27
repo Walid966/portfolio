@@ -66,7 +66,7 @@
                   Visit website <i class="fas fa-external-link-alt"></i>
                 </a>
                 <a class="proj-link" href="https://github.com/Walid966/cafe-lorem" target="_blank">
-                  Source Code <i class="fas fa-external-link-alt"></i>
+                  Source Code <i class="fab fa-github"></i>
                 </a>
               </div>
               <span class="proj-name">Restaurant Web App</span>
@@ -84,7 +84,7 @@
                   Visit website <i class="fas fa-external-link-alt"></i>
                 </a>
                 <a class="proj-link" href="https://github.com/Walid966/lorem-store" target="_blank">
-                  Source Code <i class="fas fa-external-link-alt"></i>
+                  Source Code <i class="fab fa-github"></i>v
                 </a>
               </div>
               <span class="proj-name">E-commerce Website</span>
