@@ -1,3 +1,46 @@
+$(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+            window.location.hash = hash;
+        });
+        } 
+    });
+
+    //   form
+    $('send').click(function() {
+
+        $name = $('#name');
+        $email = $('#email');
+        $message = $('#message');
+
+        $formData = {
+            name: $name.val(),
+            email: $email.val(),
+            message: $message.val()
+        }
+
+        $.ajax({
+            type: 'post',
+            url: 'form.php',
+            data: $formData,
+            success: function() {
+                $('#status-message').html('Message sent');
+            }
+        })
+
+    })
+
+  
+});
+
+
+
 const nav = document.querySelector("header");
 const navBar = document.querySelector(".nav");
 const hamburger = document.querySelector(".hamburger");

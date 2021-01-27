@@ -10,6 +10,27 @@ body {
   height: 100%;
 }
 
+input,
+textarea,
+#send {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 350px;
+  font-size: 16px;
+  padding: 5px 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+textarea {
+  height: 100px;
+}
+
+#send {
+  margin-top: 50px;
+  cursor: pointer;
+}
+
 .wrap {
   position: relative;
   overflow-x: hidden;
