@@ -1,16 +1,16 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #272727;
-  height: 100%;
+	font-family: "Open Sans", sans-serif;
+	color: #272727;
+	height: 100%;
 }
 
-input,
+/* input,
 textarea,
 #send {
   display: block;
@@ -29,400 +29,492 @@ textarea {
 #send {
   margin-top: 50px;
   cursor: pointer;
-}
+} */
 
 .wrap {
-  position: relative;
-  overflow-x: hidden;
+	position: relative;
+	overflow-x: hidden;
 }
 
 header {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  transition: top 0.5s;
-  z-index: 50 !important;
-  background: #fff;
-  box-shadow: 0 1px 6px 0 #20212447;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	transition: top 0.5s;
+	z-index: 50 !important;
+	background: #fff;
+	box-shadow: 0 1px 6px 0 #20212447;
 }
 
 main {
-  margin-top: 96px;
-  z-index: 0;
+	margin-top: 96px;
+	z-index: 0;
 }
 
 .container {
-  width: 70%;
-  max-width: 1100px;
-  margin: 0 auto;
+	width: 70%;
+	max-width: 1100px;
+	margin: 0 auto;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 li {
-  list-style: none;
-  margin: 0 0.3rem;
+	list-style: none;
+	margin: 0 0.3rem;
 }
 
 .vl {
-  width: 1px;
-  height: 22px;
-  background-color: #597770;
+	width: 1px;
+	height: 22px;
+	background-color: #597770;
 }
 
 nav a {
-  display: inline-block;
-  text-decoration: none;
-  color: #272727;
-  padding: 0.3rem;
-  text-align: center;
-  font-size: 0.9rem;
-  transition: all 200ms;
-  position: relative;
+	display: inline-block;
+	text-decoration: none;
+	color: #272727;
+	padding: 0.3rem;
+	text-align: center;
+	font-size: 0.9rem;
+	transition: all 200ms;
+	position: relative;
 }
 
 nav a:active {
-  bottom: 1px;
+	bottom: 1px;
 }
 
 .nav-bar a:hover {
-  color: #8f8f8f;
+	color: #8f8f8f;
 }
 
 .hamburger {
-  position: absolute;
-  right: 30px;
-  display: none;
-  cursor: pointer;
+	position: absolute;
+	right: 30px;
+	display: none;
+	cursor: pointer;
 }
 
 .hamburger div {
-  width: 25px;
-  height: 2px;
-  margin: 5px;
-  background-color: #000000;
+	width: 25px;
+	height: 2px;
+	margin: 5px;
+	background-color: #000000;
 }
 
 main .info {
-  height: 87vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	height: 87vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 main .container {
-  width: 70%;
-  max-width: 1100px;
-  margin: auto;
+	width: 70%;
+	max-width: 1100px;
+	margin: auto;
 }
 
 .name {
-  font-size: 60px;
-  margin-bottom: 10px;
+	font-size: 50px;
+	margin-bottom: 10px;
+	color: #2e2e2e;
 }
 
 .info p {
-  font-size: 1.5rem;
-  margin: 1.1rem 0;
-  color: #272727;
+	margin: 1.1rem 0;
+}
+
+.bg-b {
+	margin: auto;
 }
 
 .logo {
-  font-size: 2.2rem;
-  font-weight: bold;
-  color: #181111;
+	font-size: 2.2rem;
+	font-weight: bold;
+	color: #181111;
 }
 
 .logo::before {
-  content: "< ";
+	content: "< ";
 }
 
 .logo::after {
-  content: " />";
+	content: " />";
 }
 
 .copy-right {
-  display: none;
+	display: none;
 }
 
 #work h2,
 #contact h2 {
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 80px;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 80px;
 }
 
+.sd {
+	font-size: 25px;
+	color: #424242;
+}
+
+.links a {
+	margin: 0 12px;
+	font-size: 15px;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 220px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	right: -100px;
+	top: 35px;
+	z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+/* scroll icon */
+@keyframes scroll_2 {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	75% {
+		transform: translateY(0.75em);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 0;
+	}
+}
+
+.scroll-icon__dot {
+	display: block;
+	position: absolute;
+	left: 50%;
+	background: #979696;
+	height: 0.5em;
+	width: 0.5em;
+	top: 0.6em;
+	margin-left: -0.25em;
+	border-radius: 50%;
+	transform-origin: top center;
+	backface-visibility: hidden;
+	animation: scroll_2 2s ease-out infinite;
+}
+
+.scroll-icon {
+	display: block;
+	position: relative;
+	height: 3em;
+	width: 1.5em;
+	border: 0.25em solid #979696;
+	border-radius: 1em;
+}
+
+.example {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+/* scroll end */
+
 .proj-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 20px 80px 0;
-  max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 20px 80px 0;
+	max-width: 400px;
 }
 
 #work h3 {
-  margin-bottom: 26px;
-  font-size: 24px;
+	margin-bottom: 26px;
+	font-size: 24px;
 }
 
 .red {
-  color: #e22727;
+	color: #e22727;
 }
 
 .rest-name {
-  position: relative;
-  z-index: 50;
-  font-size: 60px;
-  color: #fff;
-  display: block;
-  text-align: center;
+	position: relative;
+	z-index: 50;
+	font-size: 60px;
+	color: #fff;
+	display: block;
+	text-align: center;
 }
 
 .des {
-  font-size: 30px;
+	font-size: 30px;
 }
 .project .des {
-  font-size: 24px;
+	font-size: 24px;
 }
 
 .project-1 {
-  width: 100%;
-  max-width: 600px;
-  height: 300px;
-  background: #a13737;
-  position: relative;
-  padding: 10px;
-  background: url("img/baking-cheese-cooking-crust-315755.jpg");
-  background-position: center;
-  background-size: cover;
-  z-index: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	width: 100%;
+	max-width: 600px;
+	height: 300px;
+	background: #a13737;
+	position: relative;
+	padding: 10px;
+	background: url("img/baking-cheese-cooking-crust-315755.jpg");
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .project-2 {
-  width: 100%;
-  max-width: 600px;
-  height: 300px;
-  background: #a13737;
-  position: relative;
-  padding: 10px;
-  background: url("img/pexels-karolina-grabowska-5632402.jpg");
-  background-position: center;
-  background-size: cover;
-  z-index: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	width: 100%;
+	max-width: 600px;
+	height: 300px;
+	background: #a13737;
+	position: relative;
+	padding: 10px;
+	background: url("img/pexels-karolina-grabowska-5632402.jpg");
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .project::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.68);
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.68);
 }
 
 .proj-img {
-  width: 100%;
-  max-width: 400px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  z-index: 2;
+	width: 100%;
+	max-width: 400px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 2;
 }
 
 .proj-link {
-  position: relative;
-  color: #fff;
-  z-index: 2;
-  margin-top: 30px;
+	position: relative;
+	color: #fff;
+	z-index: 2;
+	margin-top: 30px;
 }
 
 .fas {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 #contact {
-  text-align: center;
-  padding-bottom: 50px;
+	text-align: center;
+	padding-bottom: 50px;
 }
 
 .email,
 .tel {
-  color: #554a4a;
-  display: block;
-  margin-top: 5px;
+	color: #554a4a;
+	display: block;
+	margin-top: 5px;
 }
 
 .email {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 .proj-name {
-  background-color: #4d4d4d;
-  color: #fff;
-  width: 100%;
-  max-width: 700px;
-  text-align: center;
-  padding: 10px 0;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  text-decoration: none;
+	background-color: #4d4d4d;
+	color: #fff;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+	padding: 10px 0;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	text-decoration: none;
 }
 
 footer {
-  background: #ebebeb;
+	background: #ebebeb;
 }
 
 footer .container {
-  padding: 20px 0;
+	padding: 20px 0;
 }
 
 footer p {
-  font-size: 12px;
-  text-align: center;
+	font-size: 12px;
+	text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
-  main .container {
-    width: 90%;
-  }
+	main .container {
+		width: 90%;
+	}
 
-  .proj-container {
-    margin: 16px 0;
-    width: 90%;
-    height: 250px !important;
-  }
+	.proj-container {
+		margin: 50px 0;
+		width: 90%;
+		height: 250px !important;
+	}
 
-  .rest-name {
-    font-size: 50px !important;
-  }
+	.rest-name {
+		font-size: 50px !important;
+	}
 
-  .des {
-    font-size: 16px !important;
-  }
+	.des {
+		font-size: 16px !important;
+	}
 
-  .copy-right {
-    display: block;
-    font-size: 12px;
-    text-align: center;
-  }
+	.copy-right {
+		display: block;
+		font-size: 12px;
+		text-align: center;
+	}
 
-  .info p {
-    font-size: 1.3rem;
-  }
+	.sdd {
+		font-size: 16px;
+		text-align: center;
+	}
 
-  main .info {
-    height: 87vh !important;
-  }
+	main .info {
+		height: 87vh !important;
+	}
 
-  .info .name {
-    font-size: 50px;
-  }
+	.info .name {
+		font-size: 50px;
+	}
 
-  #work h2,
-  #contact h2 {
-    font-size: 27px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-  }
+	#work h2,
+	#contact h2 {
+		font-size: 27px;
+		margin-bottom: 50px;
+		margin-top: 50px;
+	}
 
-  .hamburger {
-    display: block;
-    z-index: 3;
-  }
+	.hamburger {
+		display: block;
+		z-index: 3;
+	}
 
-  ul {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    width: 40vh;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(100%);
-    background-color: #f8f8f8;
-    z-index: 2;
-    transition: transform 300ms;
-  }
+	ul {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		width: 40vh;
+		height: 100vh;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transform: translateX(100%);
+		background-color: #f8f8f8;
+		z-index: 2;
+		transition: transform 300ms;
+	}
 
-  .slide {
-    transform: translateX(0px);
-  }
+	.slide {
+		transform: translateX(0px);
+	}
 
-  nav li {
-    margin-bottom: 40px;
-  }
+	nav li {
+		margin-bottom: 40px;
+	}
 
-  nav a {
-    font-size: 1.1rem;
-  }
+	nav a {
+		font-size: 1.1rem;
+	}
 
-  .vl {
-    display: none;
-  }
+	.vl {
+		display: none;
+	}
 
-  main .info {
-    margin-left: 0;
-  }
+	main .info {
+		margin-left: 0;
+	}
 }
 
 @media only screen and (max-width: 590px) {
-  .hamburger {
-    display: block;
-    z-index: 3;
-    right: 3rem;
-  }
+	.hamburger {
+		display: block;
+		z-index: 3;
+		right: 3rem;
+	}
 }
 
 @media only screen and (max-width: 414px) {
-  .name {
-    font-size: 40px !important;
-  }
+	.name {
+		font-size: 40px !important;
+	}
 
-  .info p {
-    font-size: 1.1rem;
-  }
+	.sdd {
+		font-size: 14px;
+		text-align: center;
+	}
 }
 
 @media only screen and (max-width: 360px) {
-  .hamburger {
-    display: block;
-    z-index: 3;
-    right: 2rem;
-  }
+	.hamburger {
+		display: block;
+		z-index: 3;
+		right: 2rem;
+	}
 }
 
 @media only screen and (max-width: 328px) {
-  .name {
-    font-size: 36px !important;
-  }
+	.name {
+		font-size: 36px !important;
+	}
 }
