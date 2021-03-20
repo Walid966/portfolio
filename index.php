@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
 	<script src="https://kit.fontawesome.com/ba3779d8d2.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="style.css" />
-	<title>Walid El Ahmadi | Web Developer</title>
+	<title>Walid El Ahmadi | Software Developer</title>
 </head>
 
 <body>
